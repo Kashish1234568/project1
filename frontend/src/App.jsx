@@ -35,7 +35,7 @@ const ProtectedRoute = ({ children, allowedRoles }) => {
 
 function App() {
   const { user } = useAuth();
-  
+  console.log(user)
 
   return (
     <>
