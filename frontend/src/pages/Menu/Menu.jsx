@@ -18,14 +18,16 @@ const sampleCategories = [
 ];
 
 const sampleItems = [
-  { id: "i1", name: "Veg Spring Roll", price: 129, category: "Starters", img: "/assets/sample/springroll.jpg" },
-  { id: "i2", name: "Paneer Butter Masala", price: 199, category: "Main Course - Veg", img: "/assets/sample/paneer.jpg" },
-  { id: "i3", name: "Gulab Jamun", price: 79, category: "Desserts", img: "/assets/sample/gulab.jpg" },
-  { id: "i4", name: "Garlic Naan", price: 39, category: "Breads", img: "/assets/sample/naan.jpg" },
-  { id: "i5", name: "Veg Biryani", price: 249, category: "Rice & Biryani", img: "/assets/sample/biryani.jpg" },
-  { id: "i6", name: "Hakka Noodles", price: 169, category: "Chinese", img: "/assets/sample/noodles.jpg" },
-  { id: "i7", name: "Cold Coffee", price: 99, category: "Beverages", img: "/assets/sample/coffee.jpg" },
-];
+   { id: "i1", name: "Spring Roll", price: 110, category: "Starters", img: "/images/spring roll.jpg" },
+  { id: "i2", name: "Paneer Butter Masala", price: 220, category: "Main Course - Veg", img: "/images/paneer buttor masala.jpg" },
+   { id: "i3", name: "Gulab Jamun", price: 70, category: "Desserts", img: "/images/gulab jamun.jpg" },
+   { id: "i4", name: "Garlic Naan", price: 40, category: "Breads", img: "/images/garlic naan.jpg" },
+   { id: "i5", name: "Chicken Biryani", price: 250, category: "Rice & Biryani", img: "/images/biryani.jpg" },
+    { id: "i6", name: "Hakka Noodles", price: 180, category: "Chinese", img: "/images/hakka noodles.jpg" },
+   { id: "i7", name: "Cold Coffee", price: 90, category: "Beverages", img: "/images/cold coffee.jpg" },
+  
+  ];
+
 
 const Menu = () => {
   const [categories] = useState(sampleCategories);

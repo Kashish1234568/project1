@@ -12,6 +12,42 @@ const FoodCard = ({ item, onAdd }) => {
           className="food-img"
           onError={(e) => (e.target.src = "/images/spring roll.jpg")} // ✅ handle missing image
         />
+        <img
+          src={item.img || "/images/paneer buttor masala.jpg"} // ✅ fallback if no image
+          alt={item.name}
+          className="food-img"
+          onError={(e) => (e.target.src = "/images/paneer buttor masala.jpg")} // ✅ handle missing image
+        />
+        <img
+          src={item.img || "/images/gulab jamun.jpg"} // ✅ fallback if no image
+          alt={item.name}
+          className="food-img"
+          onError={(e) => (e.target.src = "/images/gulab jamun.jpg")} // ✅ handle missing image
+        />
+        <img
+          src={item.img || "/images/garlic naan.jpg"} // ✅ fallback if no image
+          alt={item.name}
+          className="food-img"
+          onError={(e) => (e.target.src = "/images/garlic naan.jpg")} // ✅ handle missing image
+        />
+        <img
+          src={item.img || "/images/biryani.jpg"} // ✅ fallback if no image
+          alt={item.name}
+          className="food-img"
+          onError={(e) => (e.target.src = "/images/biryani.jpg")} // ✅ handle missing image
+        />
+        <img
+          src={item.img || "/images/hakka noodles.jpg"} // ✅ fallback if no image
+          alt={item.name}
+          className="food-img"
+          onError={(e) => (e.target.src = "/images/hakka noodles.jpg")} // ✅ handle missing image
+        />
+        <img
+          src={item.img || "/images/cold coffee.jpg"} // ✅ fallback if no image
+          alt={item.name}
+          className="food-img"
+          onError={(e) => (e.target.src = "/images/cold coffee.jpg")} // ✅ handle missing image
+        />
       </div>
       <div className="food-body">
         <h3>{item.name}</h3>

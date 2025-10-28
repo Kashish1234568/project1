@@ -5,9 +5,9 @@ import "./Home.css";
 import FoodCard from "../../components/FoodCard/FoodCard";
 
 const samplePopular = [
-  { id: "p1", name: "Margherita Pizza", price: 229, img: "/assets/sample/pizza.jpg" },
-  { id: "p2", name: "Paneer Tikka", price: 199, img: "/assets/sample/paneer.jpg" },
-  { id: "p3", name: "Veg Biryani", price: 249, img: "/assets/sample/biryani.jpg" },
+  { id: "p1", name: "Margherita Pizza", price: 229, img: "/images/pizza.jpg" },
+  { id: "p2", name: "Paneer Tikka", price: 199, img: "/images/tikka.jpg" },
+  { id: "p3", name: "choco lava cake", price: 249, img: "/images/choco lava.jpg" },
 ];
 
 const Home = () => {

@@ -1,12 +1,15 @@
 /* Menu.css */
-.menu-page { color: #f3efe6; min-height: 80vh; padding-bottom: 60px; }
+/* *{
+  background-image: url("/images/background.jpg");
+} */
+.menu-page { color: #051b13b9; min-height: 80vh; padding-bottom: 60px; }
 .menu-layout { display: flex; gap: 24px; align-items: flex-start; }
 
 /* SIDEBAR */
 .sidebar { width: 260px; position: sticky; top: 100px; }
-.category-list { background: rgba(255,255,255,0.03); padding: 12px; border-radius: 10px; }
-.category-item { padding: 10px 12px; margin-bottom: 8px; cursor: pointer; color: #efe7de; border-radius: 8px; }
-.category-item.active { background: rgba(196,154,108,0.14); color: #f6e7d7; }
+.category-list { background: rgba(177, 96, 43, 0.966); padding: 12px; border-radius: 10px;  }
+.category-item { padding: 10px 12px; margin-bottom: 8px; cursor: pointer; color: wheat; border-radius: 8px; font-size: 20px; }
+.category-item.active { background: rgba(206, 111, 10, 0.767); color: #d7f6e4; }
 
 /* MAIN */
 .menu-main { flex: 1; }
