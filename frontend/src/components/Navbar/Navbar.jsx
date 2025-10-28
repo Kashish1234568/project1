@@ -4,6 +4,8 @@ import "./Navbar.css";
 
 const Navbar = () => {
   return (
+    
+
     <nav className="navbar">
       <div className="nav-left">
         <h2 className="logo">QR Dine</h2>
@@ -22,7 +24,9 @@ const Navbar = () => {
         <Link to="/m/demo" className="btn cust-btn">Customer</Link>
         <Link to="/login" className="btn login-btn">Login</Link>
       </div>
+
     </nav>
+    
   );
 };
 

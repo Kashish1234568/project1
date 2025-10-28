@@ -1,0 +1,70 @@
+/* frontend/src/pages/Contact.css */
+.contact-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.contact-container h1 {
+  font-size: 36px;
+  color: #222;
+}
+
+.contact-container h1 span {
+  color: #ff6600;
+}
+
+.contact-tagline {
+  margin-bottom: 20px;
+  color: #666;
+  font-size: 18px;
+}
+
+.contact-info, .support-hours {
+  background: #fff7f0;
+  padding: 20px;
+  margin: 15px auto;
+  border-radius: 8px;
+  border-left: 4px solid #ff6600;
+  text-align: left;
+  max-width: 700px;
+}
+
+.contact-info a {
+  color: #ff6600;
+  text-decoration: none;
+}
+
+.team-section {
+  margin-top: 30px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.team-card {
+  background: #ffe6cc;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+  border: 1px solid #ffb27d;
+}
+
+.team-card h4 {
+  margin-bottom: 5px;
+  color: #ff6600;
+}
+
+.contact-footer {
+  margin-top: 30px;
+  color: #444;
+  font-style: italic;
+}

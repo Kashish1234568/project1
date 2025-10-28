@@ -1,0 +1,63 @@
+/* frontend/src/pages/About.css */
+.about-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.about-container h1 {
+  font-size: 35px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.about-container h1 span {
+  color: #ff6600;
+}
+
+.tagline {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.about-text {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 15px;
+  line-height: 1.7;
+}
+
+.features-list {
+  text-align: left;
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.features-list li {
+  background: #fff7f0;
+  margin: 8px 0;
+  padding: 10px 15px;
+  border-left: 4px solid #ff6600;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.mission-box {
+  background: #ffe6cc;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.mission-box h3 {
+  color: #ff6600;
+}
+
+.mission-box p {
+  color: #333;
+}

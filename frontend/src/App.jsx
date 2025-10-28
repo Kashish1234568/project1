@@ -3,10 +3,10 @@ import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { useAuth } from './contexts/AuthContext';
 
-// ✅ Navbar import
+// ✅ Navbar
 import Navbar from "./components/Navbar/Navbar";
 
-// Pages
+// ✅ Pages
 import LoginPage from './pages/Auth/LoginPage'; 
 import CustomerMenu from './pages/Customer/CustomerMenu';
 import StaffDashboard from './pages/Staff/StaffDashboard';
@@ -15,43 +15,45 @@ import AdminTableManager from './pages/Admin/AdminTableManager';
 import OrderStatusTracker from './pages/Customer/OrderStatusTracker';
 import NotFound from './pages/NotFound';
 
-// --- Router Guard/Protected Component ---
+// ✅ New Pages
+import About from "./pages/About/About";
+import Contact from "./pages/Contact/Contact";
+
+
+// --- Protected Routes ---
 const ProtectedRoute = ({ children, allowedRoles }) => {
   const { user, isLoading } = useAuth();
   
   if (isLoading) return <div>Loading...</div>;
+  if (!user) return <Navigate to="/login" replace />;
 
-  if (!user) {
-    return <Navigate to="/login" replace />;
-  }
-  
   if (user && !allowedRoles.includes(user.role)) {
     return <Navigate to="/" replace />;
   }
 
   return children;
 };
-// ----------------------------------------
 
 function App() {
   const { user } = useAuth();
-  console.log(user)
 
   return (
     <>
-      {/* ✅ Navbar sabhi pages par dikhegi */}
+      {/* ✅ Navbar always visible */}
       <Navbar />
 
       {/* ✅ All Routes */}
       <Routes>
         {/* Public Routes */}
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/about" element={<About />} /> {/* ✅ About page */}
+        <Route path="/contact" element={<Contact />} /> {/* ✅ Contact page */}
 
         {/* Customer Routes */}
         <Route path="/m/:qrSlug" element={<CustomerMenu />} />
         <Route path="/order-status" element={<OrderStatusTracker />} />
 
-        {/* Staff Protected Routes */}
+        {/* Staff Routes */}
         <Route 
           path="/staff/orders" 
           element={
@@ -61,7 +63,7 @@ function App() {
           }
         />
 
-        {/* Admin Protected Routes */}
+        {/* Admin Routes */}
         <Route 
           path="/admin/menu" 
           element={
@@ -82,7 +84,7 @@ function App() {
         {/* Default Route */}
         <Route path="/" element={<Navigate to="/login" replace />} />
 
-        {/* 404 Route */}
+        {/* 404 Page */}
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
