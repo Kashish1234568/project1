@@ -1,0 +1,44 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  padding: 10px 30px;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.logo {
+  margin: 0;
+  color: #ffcc00;
+}
+
+.nav-center a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-center a:hover {
+  color: #ffcc00;
+}
+
+.nav-right .btn {
+  margin-left: 10px;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: white;
+}
+
+.admin-btn { background-color: #d9534f; }
+.staff-btn { background-color: #0275d8; }
+.cust-btn { background-color: #5cb85c; }
+.login-btn { background-color: #f0ad4e; }
+
+.btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
