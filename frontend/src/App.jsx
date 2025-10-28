@@ -16,6 +16,8 @@ import OrderStatusTracker from './pages/Customer/OrderStatusTracker';
 import NotFound from './pages/NotFound';
 
 // ✅ New Pages
+import Home from "./pages/Home/Home";
+import Menu from "./pages/Menu/Menu";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 
@@ -46,6 +48,9 @@ function App() {
       <Routes>
         {/* Public Routes */}
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/" element={<Home />} />
+<Route path="/menu" element={<Menu />} />
+<Route path="/m/menu" element={<Menu />} />
         <Route path="/about" element={<About />} /> {/* ✅ About page */}
         <Route path="/contact" element={<Contact />} /> {/* ✅ Contact page */}
 

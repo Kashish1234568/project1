@@ -1,0 +1,5 @@
+/* CategorySidebar.css */
+.category-list { padding: 8px; }
+.category-item { padding: 12px; border-radius: 8px; cursor: pointer; transition: background 0.2s; }
+.category-item:hover { background: rgba(255,255,255,0.04); }
+.category-item.active { background: rgba(196,154,108,0.16); color: #fff; font-weight:600; }
